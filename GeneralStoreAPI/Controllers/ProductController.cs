@@ -63,7 +63,7 @@ namespace GeneralStoreAPI.Controllers
             return BadRequest(ModelState);
         }
 
-        /*      ALTERNATE WAY TO MAKE A PUT METHOD
+        /*      ALTERNATE WAY TO MAKE A PUT/UPDATE METHOD
         [HttpPut]
         public async Task<IHttpActionResult> Put([FromUri] int id, [FromBody] Product model)
         {
