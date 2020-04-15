@@ -10,6 +10,5 @@ namespace GeneralStoreAPI.Controllers
 {
     public class ProductController : ApiController
     {
-        private readonly ApplicationDbContext _context = new ApplicationDbContext();
     }
 }
