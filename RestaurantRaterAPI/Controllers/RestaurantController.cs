@@ -55,6 +55,7 @@ namespace RestaurantRaterAPI.Controllers
             return NotFound();
         }
 
+        //UPDATE
         [HttpPut]    //Update in CRUD example
 
         public async Task<IHttpActionResult> UpdateRestaurant([FromUri] int id, [FromBody] Restaurant model)
@@ -74,6 +75,23 @@ namespace RestaurantRaterAPI.Controllers
                 return NotFound();
             }
             return BadRequest(ModelState);
+        }
+
+        //DELETE
+        [HttpDelete]    //Delete in CRUD example
+        public async Task<IHttpActionResult> DeleteRestaurantById(int id)
+        {
+            Restaurant restaurant = await _context.Restaurants.FindAsync(id);
+            if (restaurant == null)
+            {
+                return NotFound();
+            }
+            _context.Restaurants.Remove(restaurant);
+            if (await _context.SaveChangesAsync() == 1)     //SaveChangesAsync returns integer....amount of rows that you changed
+            {
+                return Ok();
+            }
+            return InternalServerError();
         }
     }
 }
