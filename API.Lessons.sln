@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToAPI", "IntroToAPI\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantRaterAPI", "RestaurantRaterAPI\RestaurantRaterAPI.csproj", "{80E7ABEA-8A4E-4CC1-A94D-6CC6626ADB27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralStoreAPI", "GeneralStoreAPI\GeneralStoreAPI.csproj", "{DD6F5881-D2BE-4EF6-9BC3-4CC345A15B84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{80E7ABEA-8A4E-4CC1-A94D-6CC6626ADB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80E7ABEA-8A4E-4CC1-A94D-6CC6626ADB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80E7ABEA-8A4E-4CC1-A94D-6CC6626ADB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD6F5881-D2BE-4EF6-9BC3-4CC345A15B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD6F5881-D2BE-4EF6-9BC3-4CC345A15B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD6F5881-D2BE-4EF6-9BC3-4CC345A15B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD6F5881-D2BE-4EF6-9BC3-4CC345A15B84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
